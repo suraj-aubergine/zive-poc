@@ -1,0 +1,287 @@
+@import '_shared.scss';
+@import 'fonts.scss';
+@import 'typo.scss';
+@import 'spacing.scss';
+@import 'grid.scss';
+@import 'flex-box.scss';
+@import 'pagination.scss';
+@import 'datepicker.scss';
+
+// The colors are default and not specific to the Zive style guide.
+// The design system is yet to be received from the design team.
+
+:root {
+	--color-bg-cta: #296db2;
+	--color-bg-error: #aa232c;
+	--color-bg-error-light: #f8dfe1;
+	--color-bg-success: #02880f;
+	--color-bg-success-light: #d3ede0;
+	--color-bg-cloud: #fafcfe;
+	--color-accent: #eeeff0;
+	--color-bg-cta-hover: #619edb;
+	--color-bg-cta-disabled: #b0ceed;
+	--color-font-title: #f8a233;
+	--color-border-error: #e58187;
+	--color-border-success: #62bf91;
+	--color-font-body: #25282b;
+	--color-font-body-disabled: #babfc4;
+	--color-font-helper: #4e5154;
+}
+html {
+	font-size: 16px !important;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	overflow: auto;
+	line-height: 2rem;
+	margin: 0px;
+}
+
+#root {
+	height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* HTML ELEMENTS CUSTOM CSS */
+* {
+	box-sizing: border-box;
+
+	&:after,
+	&:before {
+		box-sizing: border-box;
+	}
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+button,
+button:active,
+button:focus,
+button:hover {
+	outline: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+// Overriding default css of toastify
+
+.Toastify__toast-container {
+	width: 420px !important;
+}
+
+.Toastify__toast {
+	$border: 1px;
+	padding: 16px !important;
+	border-radius: 10px !important;
+	background: color(gradients-stoke-default) !important;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: $border;
+		border-radius: 9px;
+		background: color(shades-white);
+	}
+}
+
+.Toastify__toast-body {
+	padding: 0px !important;
+	margin: 0px !important;
+	align-items: flex-start !important;
+}
+
+.Toastify__close-button {
+	margin-top: 16px;
+}
+.Toastify__close-button > svg {
+	height: 10px !important;
+	width: 10px !important;
+}
+
+.Toastify__toast-icon {
+	width: 42px !important;
+}
+
+// End: Overriding default css of toastify
+
+// Overriding default css of Full calendar
+.fc .fc-scrollgrid-section-body table,
+.fc .fc-scrollgrid-section-footer table {
+	border-bottom-style: initial !important;
+}
+.fc-datagrid-body {
+	tbody {
+		tr {
+			td {
+				border: 0.5px solid color(neutrals-1);
+				&[rowspan] {
+					.fc-datagrid-cell-frame {
+						height: 100% !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+.fc {
+	&-event {
+		margin: 1em 0;
+		cursor: move;
+		height: 50px;
+		margin-right: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+	&-sticky {
+		left: 0px !important;
+	}
+	&-timeline-slot-frame {
+		justify-content: start !important;
+		height: 54px !important;
+	}
+	&-timeline-slot-cushion {
+		padding: 11px 18px !important;
+	}
+	&-custom-slot-label {
+		.level-1 {
+			color: #7e8c96;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 28px;
+		}
+		.level-2 {
+			color: #7e8c96;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		.level-3 {
+			color: #99aab6;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	&-datagrid-header .fc-datagrid-cell-frame {
+		justify-content: center !important;
+	}
+
+	&-scrollgrid-section-header .fc-datagrid-cell-cushion {
+		display: flex !important;
+		align-items: stretch !important;
+		width: 100%;
+	}
+
+	&-datagrid-cell-cushion {
+		height: 100% !important;
+		display: block;
+		min-height: 80px;
+		padding: 0px !important;
+		overflow: visible !important;
+		position: relative !important;
+	}
+	&-datagrid-cell-main {
+		width: 100%;
+		border: none;
+		border-collapse: collapse;
+	}
+}
+.fc-bg-event.fc-event {
+	all: unset;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: repeating-linear-gradient(-20deg, #e0e5e9, #e0e5e9 1px, #ffffff 1px, #ffffff 10px);
+	border-right: 1px solid var(--fc-border-color);
+	border-left: 1px solid var(--fc-border-color);
+}
+.fc-event {
+	margin: 1em 0;
+	cursor: move;
+	height: 50px;
+	margin-right: 20px;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border: 4px solid rgba(255, 255, 255, 0.4);
+	font-weight: 900;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+.fc {
+	width: 100%;
+	border: none;
+	height: 84vh;
+}
+.fc-scrollgrid-section td {
+	border-bottom: none;
+	//border-right: none;
+}
+.fc-datagrid-cell {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.fc-cell-shaded {
+	background-color: #fff;
+}
+.fc-scrollgrid-liquid {
+	border: none !important;
+}
+.fc .fc-resource-timeline-divider {
+	width: 1px;
+	border: none;
+}
+
+// .fc-scrollgrid-section::-webkit-scrollbar {
+//     display: none;  /* Safari and Chrome */
+// }
+
+// ::-webkit-scrollbar {
+// 	width: 10px; /* Remove scrollbar space */
+// 	height: 0px;
+// 	background: transparent; /* Optional: just make scrollbar invisible */
+// }
+// /* Optional: show position indicator in red */
+// ::-webkit-scrollbar-thumb {
+// 	background: #c2ccd3;
+// 	scrollbar-width: 2px;
+// }
+// End: Overriding default css of Full calendar
+
+// Overriding default css of date picker
+
+// End: Overriding default css of date picker

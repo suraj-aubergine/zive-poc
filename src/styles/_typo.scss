@@ -1,0 +1,143 @@
+@import './shared';
+
+.h1-lg-500 {
+	@include h1-lg-500;
+}
+.h1-lg-600 {
+	@include h1-lg-600;
+}
+.h1-lg-700 {
+	@include h1-lg-700;
+}
+.h1-lg-800 {
+	@include h1-lg-800;
+}
+
+.h1-sm-500 {
+	@include h1-sm-500;
+}
+.h1-sm-600 {
+	@include h1-sm-600;
+}
+.h1-sm-700 {
+	@include h1-sm-700;
+}
+.h1-sm-800 {
+	@include h1-sm-800;
+}
+
+.h1-500 {
+	@include h1-500;
+}
+.h1-600 {
+	@include h1-600;
+}
+.h1-700 {
+	@include h1-700;
+}
+.h1-800 {
+	@include h1-800;
+}
+.h2-500 {
+	@include h2-500;
+}
+.h2-600 {
+	@include h2-600;
+}
+.h2-700 {
+	@include h2-700;
+}
+.h2-800 {
+	@include h2-800;
+}
+.h3-500 {
+	@include h3-500;
+}
+.h3-600 {
+	@include h3-600;
+}
+.h3-700 {
+	@include h3-700;
+}
+.h3-800 {
+	@include h3-800;
+}
+.h4-500 {
+	@include h4-500;
+}
+.h4-600 {
+	@include h4-600;
+}
+.h4-700 {
+	@include h4-700;
+}
+.h4-800 {
+	@include h4-800;
+}
+.h5-500 {
+	@include h5-500;
+}
+.h5-600 {
+	@include h5-600;
+}
+.h5-700 {
+	@include h5-700;
+}
+.h5-800 {
+	@include h5-800;
+}
+.h6-500 {
+	@include h6-500;
+}
+.h6-600 {
+	@include h6-600;
+}
+.h6-700 {
+	@include h6-700;
+}
+.h6-800 {
+	@include h6-800;
+}
+
+.p-lg-400 {
+	@include p-lg-400;
+}
+.p-lg-500 {
+	@include p-lg-500;
+}
+.p-lg-600 {
+	@include p-lg-600;
+}
+
+.p-md-400 {
+	@include p-md-400;
+}
+.p-md-500 {
+	@include p-md-500;
+}
+.p-md-600 {
+	@include p-md-600;
+}
+.p-sm-400 {
+	@include p-sm-400;
+}
+.p-sm-500 {
+	@include p-sm-500;
+}
+.p-sm-600 {
+	@include p-sm-600;
+}
+
+.p-xs-400 {
+	@include p-xs-400;
+}
+.p-xs-500 {
+	@include p-xs-500;
+}
+.p-xs-600 {
+	@include p-xs-600;
+}
+
+.p-overline-500 {
+	@include p-overline-500;
+}

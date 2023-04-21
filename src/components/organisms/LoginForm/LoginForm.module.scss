@@ -1,0 +1,27 @@
+%small-text{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.login-footer {
+    display: flex;
+    margin: 18px 0;
+    justify-content: space-between;
+}
+
+.remember {
+    @extend %small-text;
+    font-weight: 400;
+    color: #000000;
+}
+
+.forgot-password-link {
+    text-align: right;
+    color: #206D69;
+    @extend %small-text;
+    font-weight: 700;
+}
+
+.login-btn {
+    margin: 18px 0;
+}

@@ -1,0 +1,28 @@
+.layout-container {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.left-section-container {
+  width: 58.33%;
+  background-color: #206D69;
+  padding: 82px 72px;
+  min-height: 100vh;
+
+  background-image:url('../../../assets/images/left-image.svg');
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.right-section-container {
+    width: 41.66%;
+    align-self: center;
+    overflow: auto;
+    height: 100%;
+    padding: 40px;
+}

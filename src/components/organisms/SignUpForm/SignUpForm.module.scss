@@ -1,0 +1,39 @@
+%small-text{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.signup-footer {
+    display: flex;
+    margin: 18px 0;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.terms {
+    @extend %small-text;
+    font-weight: 400;
+    display: flex;
+
+    input[type="checkbox"] {
+        accent-color:  #206D69;
+        ;
+    }
+
+    label {
+        color: #000000;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+}
+
+.terms-link {
+    text-align: right;
+    color: #206D69;
+    @extend %small-text;
+    font-weight: 700;
+}
+
+.login-btn {
+    margin: 18px 0;
+}

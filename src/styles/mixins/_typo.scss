@@ -1,0 +1,251 @@
+@use 'sass:map';
+@import '../_variables';
+// Defining typo variable here. So, designers need to deal with only this file
+// To change anything related to typography
+$typography: (
+	'h1-lg-size': 52px,
+	'h1-sm-size': 44px,
+	'h1-size': 40px,
+	'h2-size': 36px,
+	'h3-size': 32px,
+	'h4-size': 28px,
+	'h5-size': 24px,
+	'h6-size': 20px,
+	'p-lg-size': 18px,
+	'p-md-size': 16px,
+	'p-sm-size': 14px,
+	'p-xs-size': 12px,
+	'p-overline-size': 12px,
+	'h1-lg-line-height': 56px,
+	'h2-sm-line-height': 48px,
+	'h1-line-height': 48px,
+	'h2-line-height': 44px,
+	'h3-line-height': 40px,
+	'h4-line-height': 36px,
+	'h5-line-height': 32px,
+	'h6-line-height': 24px,
+	'p-lg-line-height': 28px,
+	'p-md-line-height': 24px,
+	'p-sm-line-height': 20px,
+	'p-xs-line-height': 20px,
+	'p-overline-line-height': 14px
+);
+
+@mixin base-typo {
+	font-family: 'Inter', sans-serif;
+	// letter-spacing: -2px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin get-typo($size) {
+	@include base-typo;
+	font-size: map.get($typography, #{$size}#{'-size'});
+	line-height: map.get($typography, #{$size}#{'-line-height'});
+}
+@mixin h1-lg-500 {
+	@include get-typo('h1-lg');
+	font-weight: 500;
+}
+@mixin h1-lg-600 {
+	@include get-typo('h1-lg');
+	font-weight: 600;
+}
+@mixin h1-lg-700 {
+	@include get-typo('h1-lg');
+	font-weight: 700;
+}
+@mixin h1-lg-800 {
+	@include get-typo('h1-lg');
+	font-weight: 800;
+}
+
+@mixin h1-sm-500 {
+	@include get-typo('h1-sm');
+	font-weight: 500;
+}
+@mixin h1-sm-600 {
+	@include get-typo('h1-sm');
+	font-weight: 600;
+}
+@mixin h1-sm-700 {
+	@include get-typo('h1-sm');
+	font-weight: 700;
+}
+@mixin h1-sm-800 {
+	@include get-typo('h1-sm');
+	font-weight: 800;
+}
+
+@mixin h1-500 {
+	@include get-typo('h1');
+	font-weight: 500;
+}
+
+@mixin h1-600 {
+	@include get-typo('h1');
+	font-weight: 600;
+}
+
+@mixin h1-700 {
+	@include get-typo('h1');
+	font-weight: 700;
+}
+
+@mixin h1-800 {
+	@include get-typo('h1');
+	font-weight: 800;
+}
+
+@mixin h2-500 {
+	@include get-typo('h2');
+	font-weight: 500;
+}
+
+@mixin h2-600 {
+	@include get-typo('h2');
+	font-weight: 600;
+}
+
+@mixin h2-700 {
+	@include get-typo('h2');
+	font-weight: 700;
+}
+
+@mixin h2-800 {
+	@include get-typo('h2');
+	font-weight: 800;
+}
+@mixin h3-500 {
+	@include get-typo('h3');
+	font-weight: 500;
+}
+
+@mixin h3-600 {
+	@include get-typo('h3');
+	font-weight: 600;
+}
+
+@mixin h3-700 {
+	@include get-typo('h3');
+	font-weight: 700;
+}
+
+@mixin h3-800 {
+	@include get-typo('h3');
+	font-weight: 800;
+}
+
+@mixin h4-500 {
+	@include get-typo('h4');
+	font-weight: 500;
+}
+
+@mixin h4-600 {
+	@include get-typo('h4');
+	font-weight: 600;
+}
+
+@mixin h4-700 {
+	@include get-typo('h4');
+	font-weight: 700;
+}
+
+@mixin h4-800 {
+	@include get-typo('h4');
+	font-weight: 800;
+}
+@mixin h5-500 {
+	@include get-typo('h5');
+	font-weight: 500;
+}
+@mixin h5-600 {
+	@include get-typo('h5');
+	font-weight: 600;
+}
+@mixin h5-700 {
+	@include get-typo('h5');
+	font-weight: 700;
+}
+
+@mixin h5-800 {
+	@include get-typo('h5');
+	font-weight: 800;
+}
+
+@mixin h6-500 {
+	@include get-typo('h6');
+	font-weight: 500;
+}
+
+@mixin h6-600 {
+	@include get-typo('h6');
+	font-weight: 600;
+}
+
+@mixin h6-700 {
+	@include get-typo('h6');
+	font-weight: 700;
+}
+
+@mixin h6-800 {
+	@include get-typo('h6');
+	font-weight: 800;
+}
+
+@mixin p-lg-400 {
+	@include get-typo('p-lg');
+	font-weight: 400;
+}
+@mixin p-lg-500 {
+	@include get-typo('p-lg');
+	font-weight: 500;
+}
+@mixin p-lg-600 {
+	@include get-typo('p-lg');
+	font-weight: 600;
+}
+
+@mixin p-md-400 {
+	@include get-typo('p-md');
+	font-weight: 400;
+}
+@mixin p-md-500 {
+	@include get-typo('p-md');
+	font-weight: 500;
+}
+@mixin p-md-600 {
+	@include get-typo('p-md');
+	font-weight: 600;
+}
+
+@mixin p-sm-400 {
+	@include get-typo('p-sm');
+	font-weight: 400;
+}
+@mixin p-sm-500 {
+	@include get-typo('p-sm');
+	font-weight: 500;
+}
+@mixin p-sm-600 {
+	@include get-typo('p-sm');
+	font-weight: 600;
+}
+
+@mixin p-xs-400 {
+	@include get-typo('p-xs');
+	font-weight: 400;
+}
+@mixin p-xs-500 {
+	@include get-typo('p-xs');
+	font-weight: 500;
+}
+@mixin p-xs-600 {
+	@include get-typo('p-xs');
+	font-weight: 600;
+}
+
+@mixin p-overline-500 {
+	@include get-typo('p-overline');
+	font-weight: 500;
+}
